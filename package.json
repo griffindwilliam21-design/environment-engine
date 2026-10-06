@@ -1,0 +1,25 @@
+{
+  "name": "environment-engine",
+  "version": "1.0.0",
+  "description": "Adaptive environment engine that listens for build/runtime needs and wires the required environment components together.",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts"
+  },
+  "keywords": [
+    "environment",
+    "dependency-injection",
+    "runtime",
+    "build-engine",
+    "plugin-system"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.3"
+  }
+}
